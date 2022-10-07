@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.org/mergeable-ingress-type: master
+  creationTimestamp: null
+  name: codefreshtest2-master
+  namespace: codefreshtest2
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: codefreshtest2.ad2661d85addd45a88a7770654d1673b-1836621158.ap-south-1.elb.amazonaws.com
+status:
+  loadBalancer: {}
